@@ -7,7 +7,7 @@ $ meegra setup
 OK - Created .meegra file in /home/<your_user>!
 
 $ meegra setup
-ERROR - db file .meegrea already presented
+ERROR - db file .meegra already created
  ```
 
 
