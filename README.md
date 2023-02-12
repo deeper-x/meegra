@@ -1,20 +1,21 @@
 ### Meegra database migration management tool
 
+### COMMAND LINE VERSION:
+
 Setup:
 ```sh
 # create db in $HOME
-$ meegra setup
-OK - Created .meegra file in /home/<your_user>!
+$ meegra setup demo
+OK - Created ${HOME}/.meegra_demo file!
 
 $ meegra setup
-ERROR - db file .meegra already created
+ERROR - db file ${HOME}/.meegra_demo already created
  ```
-
 
 Typical workflow:
 ```sh
 # create new migration record
-$ meegra sql new 
+$ meegra sql query 
 
 # edit mode:
 # CREATE TABLE foo
@@ -22,7 +23,7 @@ $ meegra sql new
 # text VARCHAR(100) NOT NULL,
 # ts_created TIMESTAMP DEFAULT NOW();
 
-OK - Saved query qith id 4!
+OK - Saved query with id 4!
 
 # show all completed queries on local machine
 $ meegra sql done
